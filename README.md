@@ -44,8 +44,8 @@ Esta API permite o gerenciamento de um sistema financeiro, onde os usuários pod
 3. Configure o banco de dados no arquivo `application.properties` para apontar para o PostgreSQL:
     ```properties
     spring.datasource.url=jdbc:postgresql://localhost:5432/financeiro
-    spring.datasource.username=seu-usuario
-    spring.datasource.password=sua-senha
+    spring.datasource.username=*SuaSenhaDoPostgre*
+    spring.datasource.password=sua-*senhapadraodopostgre*
     ```
 
 4. Execute a aplicação:
