@@ -62,35 +62,11 @@ Esta API permite o gerenciamento de um sistema financeiro, onde os usuários pod
 
 ### Endpoints principais
 
-- **/pessoas**
-  - `GET /pessoas`: Lista todas as pessoas cadastradas.
-  - `POST /pessoas`: Cadastra uma nova pessoa.
-  - `PUT /pessoas/{id}`: Atualiza os dados de uma pessoa.
-  - `DELETE /pessoas/{id}`: Remove uma pessoa do sistema.
-
-- **/grupos**
-  - `GET /grupos`: Lista todos os grupos.
-  - `POST /grupos`: Cria um novo grupo.
-  - `PUT /grupos/{id}`: Atualiza um grupo.
-  - `DELETE /grupos/{id}`: Exclui um grupo.
-
-- **/metas**
-  - `GET /metas`: Lista todas as metas financeiras.
-  - `POST /metas`: Cria uma nova meta.
-  - `PUT /metas/{id}`: Atualiza uma meta.
-  - `DELETE /metas/{id}`: Exclui uma meta.
-
-- **/lancamentos**
-  - `GET /lancamentos`: Lista todos os lançamentos financeiros.
-  - `POST /lancamentos`: Cria um novo lançamento.
-  - `PUT /lancamentos/{id}`: Atualiza um lançamento.
-  - `DELETE /lancamentos/{id}`: Exclui um lançamento.
-
-- **/relatorios**
-  - `GET /relatorios`: Gera relatórios financeiros por período, grupo ou categoria.
-
-## Testes
-
-Para rodar os testes unitários, use o comando:
-```bash
-mvn test
+  - `/api/autenticacao`: Autenticacao.
+  - `/api/categorialancamento`: retorna as categorias de lançamento.
+  - `/api/grupo`: CREATE/UPDATE/DELETE/GET/GETALL dos grupos.
+  - `/api/lancamento`: retorna os lancamentos.
+  - `/api/meta`: CREATE/UPDATE/DELETE/GET/GETALL das metas
+  - `/api/pessoa`: UPDATE de pessoas
+  - `/api/relatorios`: relatórios do saldo da pessoa
+  - `/api/tipolancamento`: tipos do lançamento feitos
